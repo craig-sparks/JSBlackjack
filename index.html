@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Blackjack</title>
+    </head>
+    <body>
+        <div id="board" class="board">
+            <div id="dealerContainer" class="table">
+                <div class="title">DEALER
+                    <div class="score" id="dealerScore">-</div>
+                </div>
+                <div class="cards" id="dealerCards"></div>
+            </div>
+            <div id="playerContainer" class="table">
+                <div class="title">PLAYER
+                    <div class="score" id="playerScore"></div>
+                    <div class="actions">
+                        <button type="button" id="playerHit" onClick="playerHit()">HIT</button>
+                        <button type="button" id="playerStand" onClick="playerStand()">STAND</button>
+                        <button type="button" id="dealButton" onClick="startGame()">DEAL</button>
+                    </div>
+                </div>
+                <div class="cards" id="playerCards"></div>
+            </div>
+        </div>
+        <script src="blackjack-es6.js"></script>
+    </body>
+</html>
